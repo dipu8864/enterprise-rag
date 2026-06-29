@@ -1,0 +1,35 @@
+{
+  "name": "enterprise-rag",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/api/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/api/server.js",
+    "ingest": "node src/ingest/loader.js",
+    "dev": "node --watch src/api/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dipu8864/enterprise-rag.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dipu8864/enterprise-rag/issues"
+  },
+  "homepage": "https://github.com/dipu8864/enterprise-rag#readme",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.106.0",
+    "@qdrant/js-client-rest": "^1.18.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mammoth": "^1.12.0",
+    "multer": "^2.2.0",
+    "openai": "^6.45.0",
+    "pdf-parse": "^2.4.5",
+    "uuid": "^14.0.1"
+  }
+}
